@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SQL Injection Practice</title>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background: #000000;
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        /*SQL Injection Practice Title*/
+        .lesson-title {
+            text-align: center;
+            font-family: Lobster;
+            color: black;
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+        }
+
+        /*Table*/
+        .box {
+            margin: 0 auto;
+            margin-top: 90px;
+            width: 300px;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            font-family: Roboto Slab;
+            color: white;
+        }
+
+        #ID,
+        #PW {
+            padding-bottom: 2px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px white solid;
+        }
+
+        #loginBtn {
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1 class="lesson-title">SQL&nbsp;&nbsp;Injection&nbsp;&nbsp;Practice</h1>
+    </header>
+    <section>
+        <div class="box">
+            <form method='post' action='WISET_LoginAction.php'>
+                <table>
+                    <tr>
+                        <!-- ID -->
+                        <th>Enter your ID</th>
+                        <td><input type="text" name="id" id="id" required="true"></td>
+                    </tr>
+                    <tr>
+                        <!-- PW -->
+                        <th>Enter your PW</th>
+                        <td><input type="text" name="pw" id="pw" required="true"></td>
+                    </tr>
+                    <tr>
+                        <!-- Login Button -->
+                        <td colspan="2"><input type='submit' id='loginBtn' onclick='Login()' value='Login'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
